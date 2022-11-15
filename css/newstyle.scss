@@ -1,4 +1,4 @@
-@mixin Pad {
+@mixin pad {
     @media (max-width: 768px) {
         @content;
     }
@@ -47,7 +47,7 @@ body {
         .input-group-text,.btn{
             height: 31px;
             font-size: 14px;
-            padding: 0 16px;
+            padding: 0 10px;
             @include mobile{
                 padding: 0 12px;
             }
@@ -72,17 +72,17 @@ body {
         }
     }
     input{
-        @include mobile{
+        @include pad{
             width: 100%;
         }
     }
     .btn{
-        @include mobile{
+        @include pad{
             width: 100%;
         }
     }
     .input-wrapper{
-        @include mobile{
+        @include pad{
             width: 100%;
         }
     }
@@ -239,8 +239,12 @@ input[type="datetime-local"],input[type="datetime-local"]:focus{
     padding-left: 8px;
     padding-right: 8px;
     outline: none;
-     -webkit-appearance: none;
-  -moz-appearance: none;
+    max-width: 225px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    @include pad{
+        max-width: 100%;
+    }
 }
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     opacity: 1;

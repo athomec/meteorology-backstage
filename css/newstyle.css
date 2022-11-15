@@ -44,7 +44,7 @@ body {
 .ibox-filter .input-group-text, .ibox-filter .btn {
   height: 31px;
   font-size: 14px;
-  padding: 0 16px;
+  padding: 0 10px;
 }
 
 @media (max-width: 576px) {
@@ -294,8 +294,15 @@ input[type="datetime-local"], input[type="datetime-local"]:focus {
   padding-left: 8px;
   padding-right: 8px;
   outline: none;
+  max-width: 225px;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+@media (max-width: 576px) {
+  input[type="datetime-local"], input[type="datetime-local"]:focus {
+    max-width: 100%;
+  }
 }
 
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
