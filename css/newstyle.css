@@ -206,6 +206,12 @@ body.mini-navbar .nav-header {
   background: #7183AC;
 }
 
+.main-title {
+  color: #3E659F;
+  font-weight: bold;
+  font-size: 24px !important;
+}
+
 .btn-success {
   background: #51BDC5;
   border: 1px solid #51BDC5;
@@ -265,6 +271,10 @@ body.mini-navbar .nav-header {
   font-weight: bold;
 }
 
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #3E659F;
+}
+
 .open-small-chat {
   background: #51BDC5;
 }
@@ -307,5 +317,19 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     margin-top: 14px;
     font-size: 16px;
   }
+}
+
+.nav.navbar-right .text-link {
+  min-height: 35px;
+  line-height: 35px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 10px;
+  border-radius: 3px;
+  background: #E8E8E8;
+}
+
+.nav.navbar-right .text-link:hover {
+  background: #ececec;
 }
 /*# sourceMappingURL=newstyle.css.map */
