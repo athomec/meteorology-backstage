@@ -77,13 +77,13 @@ body {
 
 @media (max-width: 576px) {
   .ibox input {
-    width: 100% !important;
+    width: 100%;
   }
 }
 
 @media (max-width: 576px) {
   .ibox .btn {
-    width: 100% !important;
+    width: 100%;
   }
 }
 

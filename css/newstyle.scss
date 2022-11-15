@@ -73,12 +73,12 @@ body {
     }
     input{
         @include mobile{
-            width: 100%!important;
+            width: 100%;
         }
     }
     .btn{
         @include mobile{
-            width: 100%!important;
+            width: 100%;
         }
     }
     .input-wrapper{
