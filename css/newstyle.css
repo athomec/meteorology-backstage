@@ -75,19 +75,19 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .ibox input {
     width: 100%;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .ibox .btn {
     width: 100%;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .ibox .input-wrapper {
     width: 100%;
   }
@@ -299,7 +299,7 @@ input[type="datetime-local"], input[type="datetime-local"]:focus {
   -moz-appearance: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   input[type="datetime-local"], input[type="datetime-local"]:focus {
     max-width: 100%;
   }
