@@ -241,14 +241,14 @@
                             <div class="d-flex mr-md-4 flex-wrap">
                                 <div class="input-wrapper d-flex flex-wrap">
                                     <div class="ibox-label">起始時間：</div>
-                                    <label class="sr-only" for="time2-period-from">from</label>
-                                    <input type="datetime-local" id="time2-period-from"
+                                    <label class="sr-only" for="time1-period-from">from</label>
+                                    <input type="datetime-local" id="time1-period-from"
                                         name="meeting-time" step="1" class="mb-2">
                                 </div>
                                 <div class="input-wrapper d-flex flex-wrap">
                                     <div class="ibox-label ml-0 ml-lg-2">結束時間：</div>
-                                    <label class="sr-only" for="time2-period-to">to</label>
-                                    <input type="datetime-local" id="time2-period-to"
+                                    <label class="sr-only" for="time1-period-to">to</label>
+                                    <input type="datetime-local" id="time1-period-to"
                                         name="meeting-time" step="1" class="mr-sm-2 mb-2">
                                 </div>
                                 <button class="btn btn-sm btn-success mb-2" type="button">確認</button>
@@ -1493,6 +1493,16 @@
 
             var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
             new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+
+
+                var now = new Date();
+                now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+                now.setMilliseconds(null)
+                now.setSeconds(null)
+                document.getElementById('time1-period-from').value = now.toISOString().slice(0, -1);
+                document.getElementById('time1-period-to').value = now.toISOString().slice(0, -1);
+                document.getElementById('time2-period-from').value = now.toISOString().slice(0, -1);
+                document.getElementById('time2-period-to').value = now.toISOString().slice(0, -1);
 
         });
     </script>
