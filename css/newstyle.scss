@@ -84,6 +84,9 @@ input::placeholder {
     position: relative;
     width: 80%;
     max-width: 600px;
+    @include pc-md{
+        max-width: 500px;
+    }
     @include pc-sm{
         width: 70%;
     }
@@ -93,14 +96,14 @@ input::placeholder {
     &-logo-top{
         width: 90%;
         max-width: 250px;
-          @include pc-sm{
+          @include pc-md{
         max-width: 180px;
     }
     }
     &-logo-bottom{
         width: 90%;
         max-width: 450px;
-         @include pc-sm{
+         @include pc-md{
         max-width: 380px;
     }
     }
@@ -167,7 +170,7 @@ input::placeholder {
         left: calc(50% - 460px);
         bottom: -40px;
         z-index: 10;
-        @include pc-sm{
+        @include pc-md{
         width: 200px;
         left: calc(50% - 360px);
     }
@@ -177,7 +180,7 @@ input::placeholder {
         left: calc(50% - 450px);
         bottom: 120px;
         z-index: 0;
-         @include pc-sm{
+         @include pc-md{
         width: 220px;
         left: calc(50% - 350px);
     }
@@ -187,7 +190,7 @@ input::placeholder {
         left: calc(50% + 250px);
         bottom: -40px;
         z-index: 3;
-         @include pc-sm{
+         @include pc-md{
         width: 140px;
         left: calc(50% + 180px);
     }

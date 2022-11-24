@@ -103,6 +103,12 @@ input::placeholder {
   max-width: 600px;
 }
 
+@media (max-width: 1600px) {
+  .login {
+    max-width: 500px;
+  }
+}
+
 @media (max-width: 992px) {
   .login {
     width: 70%;
@@ -120,7 +126,7 @@ input::placeholder {
   max-width: 250px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1600px) {
   .login-logo-top {
     max-width: 180px;
   }
@@ -131,7 +137,7 @@ input::placeholder {
   max-width: 450px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1600px) {
   .login-logo-bottom {
     max-width: 380px;
   }
@@ -217,7 +223,7 @@ input::placeholder {
   z-index: 10;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1600px) {
   .login-p1 {
     width: 200px;
     left: calc(50% - 360px);
@@ -231,7 +237,7 @@ input::placeholder {
   z-index: 0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1600px) {
   .login-p2 {
     width: 220px;
     left: calc(50% - 350px);
@@ -245,7 +251,7 @@ input::placeholder {
   z-index: 3;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1600px) {
   .login-p3 {
     width: 140px;
     left: calc(50% + 180px);
