@@ -85,6 +85,15 @@ input::placeholder {
           justify-content: center;
 }
 
+@media (max-width: 576px) {
+  #wrapper[data-con="login"] {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-top: 80px;
+  }
+}
+
 @media (max-width: 992px) {
   .navbar[data-con="login"] {
     min-height: 54px;

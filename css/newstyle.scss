@@ -69,6 +69,10 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile{
+        align-items: start;
+        padding-top: 80px;
+    }
 }
 .navbar[data-con="login"] {
     @include pc-sm{
