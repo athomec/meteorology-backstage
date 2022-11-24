@@ -1,3 +1,8 @@
+@mixin pc-sm {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
 @mixin pad {
     @media (max-width: 768px) {
         @content;
@@ -17,9 +22,176 @@ body {
     font-family: 微軟正黑體, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #333333;
-    @include pad{
+    font-weight: bold;
         font-size: 14px;
     }
+input,select{
+	border: 1px solid #7183AC;
+}
+
+input::placeholder {
+	color: #BDBDBD!important;
+    font-size: 16px;
+    @include pad{
+        font-size: 14px;
+    
+}
+}
+/*---------------------捲軸樣式---------------------*/
+.scroll {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar-track {
+        background-color: #efefee;
+    }
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background-color: #efefee;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #ccc;
+    }
+}
+/*登入頁*/
+#wrapper[data-con="login"] {
+    background: url(../img/bg.svg) no-repeat center #fff;
+    background-size: 2050px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar[data-con="login"] {
+    @include pc-sm{
+            min-height: 54px;
+    }
+    .navbar-title{
+        @include pc-sm{
+            display: none;
+    }
+}
+}
+.login{
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    @include pc-sm{
+        width: 70%;
+    }
+    @include pad{
+        width: 90%;
+    }
+    &-logo-top{
+        width: 90%;
+        max-width: 250px;
+          @include pc-sm{
+        max-width: 180px;
+    }
+    }
+    &-logo-bottom{
+        width: 90%;
+        max-width: 450px;
+         @include pc-sm{
+        max-width: 380px;
+    }
+    }
+    &-form{
+        background: #F1F1F1;
+        border-radius: 0 0 15px 15px;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid #3f669f;
+        position: relative;
+        z-index: 2;
+    }
+    &-title{
+        max-width: 600px;
+        background: #3E659F;
+        color: #fff;
+        margin: 0 auto;
+        border-radius: 15px 15px 0 0;
+        font-size: 23px;
+        padding: 12px 0;
+        text-align: center;
+         position: relative;
+        z-index: 2;
+        @include pad{
+        font-size: 20px;
+    
+}
+    }
+    &-btn{
+        background: #666666;
+        color: #fff;
+        border-radius: 6px;
+        font-size: 16px;
+        &:hover{
+            background: #595959;
+        }
+    }
+    &-link{
+        text-decoration: underline;
+        color: #333;
+        font-size: 14px;
+        &:hover{
+            color: #374A87;
+            text-decoration: underline;
+        }
+    }
+    &-mobile-pic{
+        display: none;
+        @include pc-sm{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    }
+    &-p1,&-p2,&-p3{
+        position: absolute;
+        @include pc-sm{
+        display: none;
+    }
+    }
+    &-p1{
+        width: 270px;
+        left: calc(50% - 460px);
+        bottom: -40px;
+        z-index: 10;
+        @include pc-sm{
+        width: 200px;
+        left: calc(50% - 360px);
+    }
+    }
+    &-p2{
+        width: 300px;
+        left: calc(50% - 450px);
+        bottom: 120px;
+        z-index: 0;
+         @include pc-sm{
+        width: 220px;
+        left: calc(50% - 350px);
+    }
+    }
+    &-p3{
+        width: 210px;
+        left: calc(50% + 250px);
+        bottom: -40px;
+        z-index: 3;
+         @include pc-sm{
+        width: 140px;
+        left: calc(50% + 180px);
+    }
+    }
+    
+}
+/*主選單*/
+.navbar{
+    min-height: 65px;
 }
 .nav > li > a {
     color: #fff;
@@ -104,7 +276,7 @@ body.mini-navbar .nav-header{
 .navbar-title{
     max-width: 420px;
     width: calc(100% - 80px);
-    margin: 7px 0 0 10px;
+    margin: 7px 0 10px 10px;
     float: left;
     @include pad{
         margin-top: 8px;
@@ -201,19 +373,8 @@ body.mini-navbar .nav-header{
     }
     td{
         font-size: 14px;
-    }
-    td[rowspan="2"] {
-        color: #fff!important;
-        background: #8CACD6;
         text-align: center;
-    }
-    td[rowspan="2"] ~ td{
-        text-align: center!important;
-        background: #f0f0f0;
-        vertical-align: middle;
-    }
-    td[colspan="13"]{
-        background: #fff;
+        vertical-align: middle!important;
     }
 }
 .table-subtitle{
