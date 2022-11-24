@@ -103,6 +103,12 @@ input::placeholder {
   max-width: 600px;
 }
 
+@media (max-width: 1600px) {
+  .login {
+    width: 500px;
+  }
+}
+
 @media (max-width: 992px) {
   .login {
     width: 70%;
