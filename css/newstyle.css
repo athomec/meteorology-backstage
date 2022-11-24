@@ -596,4 +596,8 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 .nav.navbar-right .text-link:hover {
   background: #ececec;
 }
+
+.inmodal .modal-title {
+  font-size: 20px;
+}
 /*# sourceMappingURL=newstyle.css.map */
