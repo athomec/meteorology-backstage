@@ -439,7 +439,7 @@ body.mini-navbar .nav-header {
   border-color: #E57676;
 }
 
-.btn-warning:hover {
+.btn-warning:hover, .btn-warning:focus {
   background-color: #dd4b4b;
   border-color: #dd4b4b;
 }
@@ -450,6 +450,15 @@ body.mini-navbar .nav-header {
 
 .label-primary, .badge-primary, .btn-primary {
   background: #7183AC;
+  border-color: #7183AC;
+}
+
+.btn-primary:hover {
+  background: #5c6c91;
+}
+
+.primary {
+  color: #7183AC;
 }
 
 .main-title {

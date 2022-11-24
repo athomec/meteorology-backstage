@@ -326,7 +326,7 @@ body.mini-navbar .nav-header{
 .btn-warning{
     background-color: #E57676;
     border-color: #E57676;
-    &:hover{
+    &:hover,&:focus{
         background-color: darken($color: #E57676, $amount: 10%);
         border-color: darken($color: #E57676, $amount: 10%);
     }
@@ -336,6 +336,15 @@ body.mini-navbar .nav-header{
 }
 .label-primary, .badge-primary,.btn-primary{
     background: #7183AC;
+    border-color: #7183AC;
+}
+.btn-primary{
+    &:hover{
+        background: #5c6c91;
+    }
+}
+.primary{
+    color: #7183AC;
 }
 .main-title{
     color: #3E659F;
