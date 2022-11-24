@@ -84,9 +84,6 @@ input::placeholder {
     position: relative;
     width: 80%;
     max-width: 600px;
-    @include pc-md{
-        width: 500px;
-    }
     @include pc-sm{
         width: 70%;
     }
