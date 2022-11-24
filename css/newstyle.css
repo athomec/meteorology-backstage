@@ -85,7 +85,7 @@ input::placeholder {
           justify-content: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1600px) {
   #wrapper[data-con="login"] {
     -webkit-box-align: start;
         -ms-flex-align: start;

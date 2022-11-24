@@ -69,7 +69,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    @include mobile{
+    @include pc-md{
         align-items: start;
         padding-top: 80px;
     }
