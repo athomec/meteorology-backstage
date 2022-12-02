@@ -222,8 +222,22 @@ input::placeholder {
     &-title{
         background: #fff;
         color: #3E659F;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 10px 65px 10px 15px;
         &-txt{
             font-size: 18px!important;
+            @include mobile{
+                display: block;
+                width: 100%;
+            }
+        }
+        .btn{
+            width: auto!important;
+            @include mobile{
+                margin-right: -45px;
+            }
         }
     }
     &-filter{
@@ -348,7 +362,7 @@ body.mini-navbar .nav-header{
 }
 .label-primary, .badge-primary,.btn-primary{
     background: #7183AC;
-    border-color: #7183AC;
+    border-color: #7183AC!important;
 }
 .btn-primary{
     &:hover{

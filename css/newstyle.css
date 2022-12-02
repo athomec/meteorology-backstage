@@ -292,10 +292,36 @@ input::placeholder {
 .ibox-title {
   background: #fff;
   color: #3E659F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 65px 10px 15px;
 }
 
 .ibox-title-txt {
   font-size: 18px !important;
+}
+
+@media (max-width: 576px) {
+  .ibox-title-txt {
+    display: block;
+    width: 100%;
+  }
+}
+
+.ibox-title .btn {
+  width: auto !important;
+}
+
+@media (max-width: 576px) {
+  .ibox-title .btn {
+    margin-right: -45px;
+  }
 }
 
 .ibox-filter {
@@ -465,7 +491,7 @@ body.mini-navbar .nav-header {
 
 .label-primary, .badge-primary, .btn-primary {
   background: #7183AC;
-  border-color: #7183AC;
+  border-color: #7183AC !important;
 }
 
 .btn-primary:hover {
