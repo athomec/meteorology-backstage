@@ -5115,9 +5115,9 @@ table.table-mail tr td {
 .text-navy {
   color: #1ab394 !important;
 }
-.text-primary {
+/*.text-primary {
   color: inherit !important;
-}
+}*/
 .text-success {
   color: #1c84c6 !important;
 }
