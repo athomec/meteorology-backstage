@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin pc {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
 @mixin pc-sm {
     @media (max-width: 992px) {
         @content;
@@ -69,13 +74,13 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    @include pc-md{
+    @include pc-sm{
         align-items: start;
         padding-top: 80px;
     }
 }
 .navbar[data-con="login"] {
-    @include pc-sm{
+    @include pc{
             min-height: 54px;
     }
     .navbar-title{
@@ -106,7 +111,7 @@ input::placeholder {
     }
     &-logo-bottom{
         width: 90%;
-        max-width: 450px;
+        max-width: 400px;
          @include pc-md{
         max-width: 380px;
     }
@@ -300,9 +305,9 @@ body.mini-navbar .nav-header{
     background: #3E659F;
 }
 .navbar-title{
-    max-width: 420px;
+    max-width: 360px;
     width: calc(100% - 80px);
-    margin: 7px 0 10px 10px;
+    margin: 9px 0 10px 10px;
     float: left;
     @include pad{
         margin-top: 8px;
