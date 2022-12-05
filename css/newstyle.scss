@@ -477,3 +477,19 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 .inmodal .modal-title{
     font-size: 20px;
 }
+.pagination .footable-page.active a{
+    background: #51BDC5;
+    border-color: #51BDC5;
+}
+.footable-page-arrow a{
+    color: #666!important;
+    background: #FBFBFB!important;
+    font-size: 12px;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    padding-top: 6px!important;
+}
+.pagination .footable-page a{
+    color: #333;
+}
