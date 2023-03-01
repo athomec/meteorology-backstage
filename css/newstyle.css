@@ -366,7 +366,7 @@ input::placeholder {
 }
 
 @media (max-width: 768px) {
-  .ibox .btn {
+  .ibox-btn {
     width: 100%;
   }
 }

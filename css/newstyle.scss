@@ -278,7 +278,7 @@ input::placeholder {
             width: 100%;
         }
     }
-    .btn{
+    &-btn{
         @include pad{
             width: 100%;
         }

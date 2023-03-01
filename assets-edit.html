@@ -115,7 +115,7 @@
                 <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                     <div class="navbar-header">
                         <a class="navbar-minimalize minimalize-styl-2 btn " href="#"><i class="fa fa-bars"></i> </a>
-                        <img src="img/backstage-title.svg" alt="統籌管理服務中心" class="navbar-title">
+                        <a href="index.html"><img src="img/backstage-title.svg" alt="統籌管理服務中心" class="navbar-title"></a>
                     </div>
                     <ul class="nav navbar-top-links navbar-right ml-auto">
                         <form role="search" class="navbar-form-custom" action="search_results.html">
@@ -273,7 +273,7 @@
                     <div class="wrapper wrapper-content">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="ibox ">
+                                <div class="ibox">
                                     <div class="ibox-title" data-style="inline">
                                         <h5 class="ibox-title-txt my-1">編輯清單</h5>
                                         <a href="assets.html" class="btn btn-primary btn-sm ml-auto mr-2" role="button">
@@ -288,8 +288,8 @@
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-sm-6">
-                                                        <label>保管人員工編號</label>
-                                                        <input type="text" placeholder="請輸入保管人員工編號" class="form-control"
+                                                        <label for="member-id">保管人員工編號</label>
+                                                        <input type="text" placeholder="請輸入保管人員工編號" id="member-id" class="form-control"
                                                             value="2557257">
                                                     </div>
                                                 </div>
@@ -297,8 +297,8 @@
                                             <div class="form-group">
                                                 <div class="row align-items-end">
                                                     <div class="col-sm-6">
-                                                        <label>維護單位</label>
-                                                        <select class="form-control mb-2 mb-md-0" name="unit">
+                                                        <label for="maintain-unit">維護單位</label>
+                                                        <select class="form-control mb-2 mb-md-0" name="unit" id="maintain-unit">
                                                             <option>資訊中心</option>
                                                             <option>option 2</option>
                                                             <option>option 3</option>
@@ -306,7 +306,8 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        <select class="form-control mb-2 mb-md-0" name="account">
+                                                        <label for="maintain-class" class="sr-only"></label>
+                                                        <select class="form-control mb-2 mb-md-0" name="account" id="maintain-class">
                                                             <option>系統課</option>
                                                             <option>option 2</option>
                                                             <option>option 3</option>
@@ -315,12 +316,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="jumbotron py-4">
+                                            <div class="jumbotron px-4 px-lg-5 py-4">
                                                 <div class="form-group mb-0">
                                                     <div class="row align-items-end">
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label>請選擇設備種類</label>
-                                                            <select class="form-control m-b" name="unit">
+                                                            <label for="type">請選擇設備種類</label>
+                                                            <select class="form-control m-b" id="type">
                                                                 <option>請選擇</option>
                                                                 <option>option 2</option>
                                                                 <option>option 3</option>
@@ -328,8 +329,8 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label>請選擇品牌</label>
-                                                            <select class="form-control m-b" name="account">
+                                                            <label for="brand">請選擇品牌</label>
+                                                            <select class="form-control m-b" id="brand">
                                                                 <option>請選擇</option>
                                                                 <option>option 2</option>
                                                                 <option>option 3</option>
@@ -337,30 +338,30 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label>型號</label>
+                                                            <label for="model">型號</label>
                                                             <input type="text" class="form-control m-b"
-                                                                value="DL360 Gen7">
+                                                                value="DL360 Gen7" id="model">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label>序號</label>
+                                                            <label for="serial-number">序號</label>
                                                             <input type="text" class="form-control m-b"
-                                                                value="YCHS154345">
+                                                                value="YCHS154345" id="serial-number">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label>採購文號</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="YCHS154345">
+                                                            <label class="purchase-document">採購文號</label>
+                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="YCHS154345" id="purchase-document">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label>採購案號</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="24545445">
+                                                            <label for="purchase-number">採購案號</label>
+                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="24545445" id="purchase-number">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label>採購廠商</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="DL360 Gen7">
+                                                            <label for="purchase-company">採購廠商</label>
+                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="DL360 Gen7" id="purchase-company">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label>維護廠商</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="YCHS154345">
+                                                            <label for="support-company">維護廠商</label>
+                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="YCHS154345" id="support-company">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -372,38 +373,38 @@
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>採購日</label>
+                                                        <label for="purchase-date">採購日</label>
                                                         <input class="form-control m-b" type="datetime-local"
                                                             id="purchase-date" name="meeting-time" step="1"
                                                             class="mb-0 mb-sm-2" style="max-width: 100%;">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>保固年限</label>
-                                                        <input type="text" class="form-control m-b" value="5">
+                                                        <label for="warranty-period">保固年限</label>
+                                                        <input type="text" class="form-control m-b" value="5" id="warranty-period">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>使用年限</label>
-                                                        <input type="text" class="form-control m-b" value="10">
+                                                        <label for="service-life">使用年限</label>
+                                                        <input type="text" class="form-control m-b" value="10" id="service-life">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>數量</label>
-                                                        <input type="text" class="form-control m-b" value="1">
+                                                        <label for="number">數量</label>
+                                                        <input type="text" class="form-control m-b" value="1" id="number">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>價格</label>
-                                                        <input type="text" class="form-control m-b" value="5,000,000">
+                                                        <label for="price">價格</label>
+                                                        <input type="text" class="form-control m-b" value="5,000,000" id="price">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>財產編號</label>
-                                                        <input type="text" class="form-control m-b" value="24545445">
+                                                        <label for="property-number">財產編號</label>
+                                                        <input type="text" class="form-control m-b" value="24545445" id="property-number">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>IP 位置</label>
-                                                        <input type="text" class="form-control m-b" value="DL360 Gen7">
+                                                        <label for="ip">IP 位置</label>
+                                                        <input type="text" class="form-control m-b" value="DL360 Gen7" id="ip">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>地點</label>
-                                                        <select class="form-control m-b" name="account">
+                                                        <label for="locate">地點</label>
+                                                        <select class="form-control m-b" name="account" id="locate">
                                                             <option>第一機房</option>
                                                             <option>option 2</option>
                                                             <option>option 3</option>
@@ -419,8 +420,8 @@
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>櫃號</label>
-                                                        <select class="form-control m-b" name="account">
+                                                        <label for="cabinet-no">櫃號</label>
+                                                        <select class="form-control m-b" name="account" id="cabinet-no">
                                                             <option>一</option>
                                                             <option>二</option>
                                                             <option>三</option>
@@ -428,8 +429,8 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>起始 U 數</label>
-                                                        <select class="form-control m-b" name="account">
+                                                        <label for="start-u-number">起始 U 數</label>
+                                                        <select class="form-control m-b" name="account" id="start-u-number">
                                                             <option>1</option>
                                                             <option>2</option>
                                                             <option>3</option>
@@ -437,8 +438,8 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>高度</label>
-                                                        <select class="form-control m-b" name="account">
+                                                        <label for="height">高度</label>
+                                                        <select class="form-control m-b" name="account" id="height">
                                                             <option>1</option>
                                                             <option>2</option>
                                                             <option>3</option>
@@ -446,8 +447,8 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>狀態</label>
-                                                        <select class="form-control m-b" name="account">
+                                                        <label for="status">狀態</label>
+                                                        <select class="form-control m-b" name="account" id="status">
                                                             <option>開機</option>
                                                             <option>option 2</option>
                                                             <option>option 3</option>
@@ -455,16 +456,16 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>排插 1</label>
-                                                        <input type="text" class="form-control m-b">
+                                                        <label for="socket1">排插 1</label>
+                                                        <input type="text" class="form-control m-b" id="socket1">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>排插 2</label>
-                                                        <input type="text" class="form-control m-b">
+                                                        <label for="socket2">排插 2</label>
+                                                        <input type="text" class="form-control m-b" id="socket2">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>使用情形</label>
-                                                        <select class="form-control m-b" name="account">
+                                                        <label for="situation">使用情形</label>
+                                                        <select class="form-control m-b" name="account" id="situation">
                                                             <option>請選擇</option>
                                                             <option>option 2</option>
                                                             <option>option 3</option>
@@ -472,8 +473,8 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label>所屬叢集</label>
-                                                        <select class="form-control m-b" name="account">
+                                                        <label for="belong">所屬叢集</label>
+                                                        <select class="form-control m-b" name="account" id="belong">
                                                             <option>請選擇</option>
                                                             <option>option 2</option>
                                                             <option>option 3</option>
@@ -486,9 +487,9 @@
                                         <form method="get">
                                             <div class="form-group row">
                                                 <div class="col-12 d-flex justify-content-center">
-                                                    <button class="btn btn-gray btn-lg mr-2" type="button"
+                                                    <button class="ibox-action btn btn-gray btn-lg mr-2" type="button"
                                                         onclick="javascript:location.href='assets.html'">取消回上一頁</button>
-                                                    <button class="btn btn-success btn-lg" type="submit"
+                                                    <button class="ibox-action btn btn-success btn-lg" type="submit"
                                                         onclick="javascript:location.href='assets.html'">儲存變更</button>
                                                 </div>
                                             </div>
