@@ -442,7 +442,7 @@ body.mini-navbar .nav-header {
   background: #fff;
 }
 
-.form-group .form-control {
+.form-group .form-control, .form-group input[type="datetime-local"], .form-group input[type="datetime-local"]:focus {
   border: 1px solid #afc8df;
   border-radius: 3px;
 }

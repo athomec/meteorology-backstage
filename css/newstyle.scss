@@ -335,9 +335,11 @@ body.mini-navbar .nav-header{
     margin-top: 12px;
     background: #fff;
 }
-.form-group .form-control {
-    border: 1px solid #afc8df;
-    border-radius: 3px;
+.form-group{
+    .form-control,input[type="datetime-local"],input[type="datetime-local"]:focus{
+        border: 1px solid #afc8df;
+        border-radius: 3px;
+    }
 }
 .nav-header{
     background: #2F4050;
