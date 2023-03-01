@@ -43,7 +43,7 @@
                     <p>Message : Cannot access application 'mmc.exe'. Elevated privileges might be required. Try running the UiPath application as an administrator., At Source : </p>
                 </div>
                 <div class="modal-footer justify-content-center py-2">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-primary mr-2" data-dismiss="modal">關閉</button>
                 </div>
             </div>
         </div>
@@ -239,129 +239,31 @@
 
                 </nav>
             </div>
-            <div class="row  border-bottom white-bg dashboard-header">
-                <div class="container-fluid ibox">
-                    <div class="row ibox-filter">
-                        <div class="col-12 col-xl-10 d-flex flex-wrap">
-                            <div data-toggle="buttons"
-                                class="btn-group btn-group-toggle ibox-filter-group mb-2 mr-md-3">
-                                <label class="btn btn-sm btn-white"> <input type="radio" id="option1" name="options">
-                                    一天</label>
-                                <label class="btn btn-sm btn-white active"> <input type="radio" id="option2"
-                                        name="options">一週 </label>
-                                <label class="btn btn-sm btn-white"> <input type="radio" id="option3" name="options">
-                                    一個月</label>
-                            </div>
-                            <div class="d-flex flex-wrap">
-                                <div class="input-wrapper d-flex flex-wrap">
-                                    <div class="ibox-label">自訂區間：</div>
-                                    <label class="sr-only" for="time1-period-from">from</label>
-                                    <input type="datetime-local" id="time1-period-from" name="meeting-time" step="1" class="mb-0 mb-sm-2">
-                                </div>
-                                <div class="input-wrapper d-flex flex-wrap">
-                                    <div class="ibox-label mx-1 mx-lg-2">~</div>
-                                    <label class="sr-only" for="time1-period-to">to</label>
-                                    <input type="datetime-local" id="time1-period-to" name="meeting-time" step="1" class="mr-sm-2 mb-2">
-                                </div>
-                                <button class="btn btn-sm btn-success mb-2" type="button">確認</button>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2 class="title"><i class="fa fa-pie-chart"></i> 業務資產群</h2>
                 </div>
-                <div class="col-md-3">
-                    <h2 class="main-title">使用次數排名</h2>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input" checked>
-                    <label class="custom-control-label" for="customRadioInline1">單位</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline2">個人</label>
-                </div>
-                    <ul class="list-group clear-list mt-4">
-                        <li class="list-group-item fist-item">
-                            <span class="float-right">
-                                09:00 pm
-                            </span>
-                            <span class="label label-primary">1</span> Please contact me
-                        </li>
-                        <li class="list-group-item">
-                            <span class="float-right">
-                                10:16 am
-                            </span>
-                            <span class="label label-primary">2</span> Sign a contract
-                        </li>
-                        <li class="list-group-item">
-                            <span class="float-right">
-                                08:22 pm
-                            </span>
-                            <span class="label label-primary">3</span> Open new shop
-                        </li>
-                        <li class="list-group-item">
-                            <span class="float-right">
-                                11:06 pm
-                            </span>
-                            <span class="label label-primary">4</span> Call back to Sylvia
-                        </li>
-                        <li class="list-group-item">
-                            <span class="float-right">
-                                12:00 am
-                            </span>
-                            <span class="label label-primary">5</span> Write a letter to Sandra
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="main-title">趨勢統計概觀</h2>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="ad-account" name="radio-account" class="custom-control-input" checked>
-                        <label class="custom-control-label" for="ad-account">微軟AD帳號</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="ldap-account" name="radio-account" class="custom-control-input">
-                        <label class="custom-control-label" for="ldap-account">LDAP帳號</label>
-                    </div>
-                    <div class="flot-chart dashboard-chart">
-                        <div class="flot-chart-content" id="flot-dashboard-chart"></div>
-                    </div>
-                    <div class="row text-left">
-                        <div class="col">
-                            <div class="m-l-md">
-                                <span class="h5 font-bold m-t block mb-0 text-primary">38</span>
-                                <p class="m-b block">總次數</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <span class="h5 font-bold m-t block mb-0 text-primary">15</span>
-                            <p class="m-b block">重製密碼次數</p>
-                        </div>
-                        <div class="col">
-                            <span class="h5 font-bold m-t block mb-0 text-primary">23</span>
-                            <p class="m-b block">解鎖帳號次數</p>
-                        </div>
+                <div class="col-lg-2">
 
-                    </div>
                 </div>
-                <div class="col-md-3">
-                    <h2 class="main-title">使用行為占比</h2>
-                    <div class="statistic-box">
-                        <div class="row text-center">
-                            <div class="col-lg-6">
-                                <canvas id="doughnutChart2" width="80" height="80" style="margin: 18px auto 0"></canvas>
-                                <h5>Kolter</h5>
-                            </div>
-                            <div class="col-lg-6">
-                                <canvas id="doughnutChart" width="80" height="80" style="margin: 18px auto 0"></canvas>
-                                <h5>Maxtor</h5>
-                            </div>
-                        </div>
-                        <div class="m-t">
-                            <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
-                        </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="wrapper wrapper-content pt-4 pb-0">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">首頁</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="assets.html">資產管理</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <strong>業務資產群</strong>
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>
-
             <!--內容開始-->
             <div class="row">
                 <div class="col-lg-12">
@@ -369,229 +271,164 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="ibox">
-                                    <div class="ibox-title">
-                                        <h5 class="ibox-title-txt my-1">流程執行紀錄清單</h5>
-                                        <a href="#" target="_blank" class="btn btn-primary btn-sm ml-auto mr-2" role="button">
-                                            <i class="fa fa-file mr-1"></i> 匯出 EXCEL
-                                        </a>
-                                        <a href="#" target="_blank" class="btn btn-warning btn-sm" role="button">
-                                            <i class="fa fa-file mr-1"></i> 匯出 PDF
-                                        </a>
+                                    <div class="ibox-title" data-style="inline">
+                                        <h5 class="ibox-title-txt my-1">清單</h5>
                                         <div class="ibox-tools">
-                                            <a class="collapse-link">
-                                                <i class="fa fa-chevron-up"></i>
-                                            </a>
-                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                <i class="fa fa-wrench"></i>
-                                            </a>
-                                            <ul class="dropdown-menu dropdown-user">
-                                                <li><a href="#" class="dropdown-item">Config option 1</a>
-                                                </li>
-                                                <li><a href="#" class="dropdown-item">Config option 2</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div class="container-fluid px-0">
-                                            <div class="row ibox-filter mb-3">
-                                                <div class="col-12 col-xl-10 d-flex flex-wrap">
-                                                    <div data-toggle="buttons"
-                                                        class="btn-group btn-group-toggle ibox-filter-group mb-2 mr-md-3">
-                                                        <label class="btn btn-sm btn-white"> <input type="radio"
-                                                                id="option1" name="options"> 一天</label>
-                                                        <label class="btn btn-sm btn-white active"> <input type="radio"
-                                                                id="option2" name="options">一週 </label>
-                                                        <label class="btn btn-sm btn-white"> <input type="radio"
-                                                                id="option3" name="options"> 一個月</label>
-                                                    </div>
-                                                    <div class="d-flex flex-wrap">
-                                                        <div class="input-wrapper d-flex flex-wrap">
-                                                            <div class="ibox-label">自訂區間：</div>
-                                                            <label class="sr-only" for="time2-period-from">from</label>
-                                                            <input type="datetime-local" id="time2-period-from"
-                                                                name="meeting-time" step="1" class="mb-0 mb-sm-2">
-                                                        </div>
-                                                        <div class="input-wrapper d-flex flex-wrap">
-                                                            <div class="ibox-label mx-1 mx-lg-2">~</div>
-                                                            <label class="sr-only" for="time2-period-to">to</label>
-                                                            <input type="datetime-local" id="time2-period-to"
-                                                                name="meeting-time" step="1" class="mr-sm-2 mb-2">
-                                                        </div>
-                                                        <button class="btn btn-sm btn-success mb-2"
-                                                            type="button">確認</button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6 col-xl-2 d-flex">
-                                                    <div class="input-group mb-3">
-                                                        <input type="text" class="form-control"
-                                                            placeholder="搜尋...">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-sm btn-success" type="button">
-                                                                <i class="fa fa-search"></i></button>
-                                                        </div>
-                                                    </div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control form-control-sm"
+                                                    placeholder="搜尋...">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-sm btn-success" type="button">
+                                                        <i class="fa fa-search"></i></button>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="ibox-content">
                                         <div class="table-responsive scroll mb-3">
-                                            <table class="table table-combine table-bordered table-striped mb-0" style="min-width:1350px">
+                                            <table class="table table-combine table-bordered table-striped mb-0" style="min-width:900px">
                                                 <thead>
                                                     <tr>
-                                                        <th>批次執行流水編號</th>
-                                                        <th>流水編號</th>
-                                                        <th width="90">執行工作</th>
-                                                        <th width="110">使用者帳號</th>
-                                                        <th>email</th>
-                                                        <th width="90">接收時間</th>
-                                                        <th width="90">完成時間</th>
-                                                        <th width="90">執行結果</th>
-                                                        <th width="110">更新後的<br>使用者密碼</th>
-                                                        <th width="90">回傳API<br>執行狀態</th>
-                                                        <th width="90">回傳API<br>詳細資訊</th>
-                                                        <th width="90">相關<br>詳細資訊</th>
+                                                        <th width="90">流水編號</th>
+                                                        <th>設備種類</th>
+                                                        <th>品牌</th>
+                                                        <th>型號</th>
+                                                        <th>序號</th>
+                                                        <th>IP</th>
+                                                        <th>狀態</th>
+                                                        <th width="180">動作</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td>20221011163945</td>
-                                                        <td>202210070012</td>
-                                                        <td>密碼重置</td>
-                                                        <td>mag01</td>
-                                                        <td>terrenceye@dawningtech.com.tw</td>
-                                                        <td>2022/10/07 16:16:26</td>
-                                                        <td>2022/10/11 16:40:06</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>4bW24gSKt4Kt</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>Finish</td>
-                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#info">檢視</button></td>
+                                                    <tr class="focus">
+                                                        <td>1</td>
+                                                        <td>伺服器</td>
+                                                        <td>HPe</td>
+                                                        <td>DL360 Gen7</td>
+                                                        <td>YCHS154345</td>
+                                                        <td>10.129.6.66</td>
+                                                        <td>正常</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
+                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>20221011163945</td>
-                                                        <td>202210070012</td>
-                                                        <td>密碼重置</td>
-                                                        <td>mag01</td>
-                                                        <td>terrenceye@dawningtech.com.tw</td>
-                                                        <td>2022/10/07 16:16:26</td>
-                                                        <td>2022/10/11 16:40:06</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>4bW24gSKt4Kt</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>Finish</td>
-                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#info">檢視</button></td>
+                                                        <td>2</td>
+                                                        <td>伺服器</td>
+                                                        <td>HPe</td>
+                                                        <td>DL360 Gen7</td>
+                                                        <td>YCHS154345</td>
+                                                        <td>10.129.6.66</td>
+                                                        <td>正常</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
+                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>20221011163945</td>
-                                                        <td>202210070012</td>
-                                                        <td>密碼重置</td>
-                                                        <td>mag01</td>
-                                                        <td>terrenceye@dawningtech.com.tw</td>
-                                                        <td>2022/10/07 16:16:26</td>
-                                                        <td>2022/10/11 16:40:06</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>4bW24gSKt4Kt</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>Finish</td>
-                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#info">檢視</button></td>
+                                                        <td>3</td>
+                                                        <td>伺服器</td>
+                                                        <td>HPe</td>
+                                                        <td>DL360 Gen7</td>
+                                                        <td>YCHS154345</td>
+                                                        <td>10.129.6.66</td>
+                                                        <td>正常</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
+                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>20221011163945</td>
-                                                        <td>202210070012</td>
-                                                        <td>密碼重置</td>
-                                                        <td>mag01</td>
-                                                        <td>terrenceye@dawningtech.com.tw</td>
-                                                        <td>2022/10/07 16:16:26</td>
-                                                        <td>2022/10/11 16:40:06</td>
-                                                        <td><i class="fa fa-exclamation-triangle text-warning" title="warning"></i></td>
-                                                        <td>4bW24gSKt4Kt</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>Finish</td>
-                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#info">檢視</button></td>
+                                                        <td>4</td>
+                                                        <td>伺服器</td>
+                                                        <td>HPe</td>
+                                                        <td>DL360 Gen7</td>
+                                                        <td>YCHS154345</td>
+                                                        <td>10.129.6.66</td>
+                                                        <td>正常</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
+                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>20221011163945</td>
-                                                        <td>202210070012</td>
-                                                        <td>密碼重置</td>
-                                                        <td>mag01</td>
-                                                        <td>terrenceye@dawningtech.com.tw</td>
-                                                        <td>2022/10/07 16:16:26</td>
-                                                        <td>2022/10/11 16:40:06</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>4bW24gSKt4Kt</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>Finish</td>
-                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#info">檢視</button></td>
+                                                        <td>5</td>
+                                                        <td>伺服器</td>
+                                                        <td>HPe</td>
+                                                        <td>DL360 Gen7</td>
+                                                        <td>YCHS154345</td>
+                                                        <td>10.129.6.66</td>
+                                                        <td>正常</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
+                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>20221011163945</td>
-                                                        <td>202210070012</td>
-                                                        <td>密碼重置</td>
-                                                        <td>mag01</td>
-                                                        <td>terrenceye@dawningtech.com.tw</td>
-                                                        <td>2022/10/07 16:16:26</td>
-                                                        <td>2022/10/11 16:40:06</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>4bW24gSKt4Kt</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>Finish</td>
-                                                        <td></td>
+                                                        <td>6</td>
+                                                        <td>伺服器</td>
+                                                        <td>HPe</td>
+                                                        <td>DL360 Gen7</td>
+                                                        <td>YCHS154345</td>
+                                                        <td>10.129.6.66</td>
+                                                        <td>正常</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
+                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>20221011163945</td>
-                                                        <td>202210070012</td>
-                                                        <td>密碼重置</td>
-                                                        <td>mag01</td>
-                                                        <td>terrenceye@dawningtech.com.tw</td>
-                                                        <td>2022/10/07 16:16:26</td>
-                                                        <td>2022/10/11 16:40:06</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>4bW24gSKt4Kt</td>
-                                                        <td><i class="fa fa-exclamation-triangle text-warning" title="warning"></i></td>
-                                                        <td>Finish</td>
-                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#info">檢視</button></td>
+                                                        <td>7</td>
+                                                        <td>伺服器</td>
+                                                        <td>HPe</td>
+                                                        <td>DL360 Gen7</td>
+                                                        <td>YCHS154345</td>
+                                                        <td>10.129.6.66</td>
+                                                        <td>正常</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
+                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>20221011163945</td>
-                                                        <td>202210070012</td>
-                                                        <td>密碼重置</td>
-                                                        <td>mag01</td>
-                                                        <td>terrenceye@dawningtech.com.tw</td>
-                                                        <td>2022/10/07 16:16:26</td>
-                                                        <td>2022/10/11 16:40:06</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>4bW24gSKt4Kt</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>Finish</td>
-                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#info">檢視</button></td>
+                                                        <td>8</td>
+                                                        <td>伺服器</td>
+                                                        <td>HPe</td>
+                                                        <td>DL360 Gen7</td>
+                                                        <td>YCHS154345</td>
+                                                        <td>10.129.6.66</td>
+                                                        <td>正常</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
+                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>20221011163945</td>
-                                                        <td>202210070012</td>
-                                                        <td>密碼重置</td>
-                                                        <td>mag01</td>
-                                                        <td>terrenceye@dawningtech.com.tw</td>
-                                                        <td>2022/10/07 16:16:26</td>
-                                                        <td>2022/10/11 16:40:06</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>4bW24gSKt4Kt</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>Finish</td>
-                                                        <td></td>
+                                                        <td>9</td>
+                                                        <td>伺服器</td>
+                                                        <td>HPe</td>
+                                                        <td>DL360 Gen7</td>
+                                                        <td>YCHS154345</td>
+                                                        <td>10.129.6.66</td>
+                                                        <td>正常</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
+                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>20221011163945</td>
-                                                        <td>202210070012</td>
-                                                        <td>密碼重置</td>
-                                                        <td>mag01</td>
-                                                        <td>terrenceye@dawningtech.com.tw</td>
-                                                        <td>2022/10/07 16:16:26</td>
-                                                        <td>2022/10/11 16:40:06</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>4bW24gSKt4Kt</td>
-                                                        <td><i class="fa fa-check text-navy" title="success"></i></td>
-                                                        <td>Finish</td>
-                                                        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#info">檢視</button></td>
+                                                        <td>10</td>
+                                                        <td>伺服器</td>
+                                                        <td>HPe</td>
+                                                        <td>DL360 Gen7</td>
+                                                        <td>YCHS154345</td>
+                                                        <td>10.129.6.66</td>
+                                                        <td>正常</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
+                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -1075,7 +912,7 @@
         <div class="form-chat">
             <div class="input-group input-group-sm">
                 <input type="text" class="form-control">
-                <span class="input-group-btn"> <button class="btn btn-primary" type="button">Send
+                <span class="input-group-btn"> <button class="btn btn-primary mr-2" type="button">Send
                     </button> </span>
             </div>
         </div>

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
 body {
   font-family: 微軟正黑體, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -300,6 +301,9 @@ input::placeholder {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px 65px 10px 15px;
 }
 
@@ -310,7 +314,6 @@ input::placeholder {
 @media (max-width: 576px) {
   .ibox-title-txt {
     display: block;
-    width: 100%;
   }
 }
 
@@ -318,18 +321,12 @@ input::placeholder {
   width: auto !important;
 }
 
-@media (max-width: 576px) {
-  .ibox-title .btn {
-    margin-right: -45px;
-  }
-}
-
 .ibox-filter {
   font-size: 14px;
 }
 
 .ibox-filter .input-group-text, .ibox-filter .btn {
-  height: 31px;
+  height: 35px;
   font-size: 14px;
   padding: 0 10px;
 }
@@ -341,7 +338,7 @@ input::placeholder {
 }
 
 .ibox-filter .btn {
-  line-height: 31px;
+  line-height: 35px;
 }
 
 .ibox-filter .ibox-filter-group .active {
@@ -445,6 +442,11 @@ body.mini-navbar .nav-header {
   background: #fff;
 }
 
+.form-group .form-control {
+  border: 1px solid #afc8df;
+  border-radius: 3px;
+}
+
 .nav-header {
   background: #2F4050;
 }
@@ -494,8 +496,8 @@ body.mini-navbar .nav-header {
   border-color: #7183AC !important;
 }
 
-.btn-primary:hover {
-  background: #5c6c91;
+.btn-primary:hover, .btn-primary:focus {
+  background: #5c6c91 !important;
 }
 
 .text-primary {
@@ -506,6 +508,44 @@ body.mini-navbar .nav-header {
   color: #3E659F;
   font-weight: bold;
   font-size: 24px !important;
+}
+
+.form-title {
+  color: #3E659F;
+  font-weight: bold;
+  font-size: 16px !important;
+  position: relative;
+}
+
+.form-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 100%;
+  height: 1px;
+  background: #7183AC;
+}
+
+.form-title-txt {
+  background: #E9ECEF;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding-right: 16px;
+}
+
+.form-title[data-style="light"] .form-title-txt {
+  background: #fff;
+}
+
+select {
+  background: url("../img/ic-arrow-down.svg") no-repeat right center #fff !important;
+  background-size: 20px !important;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 .btn-success {
@@ -523,6 +563,10 @@ body.mini-navbar .nav-header {
 
 .dashboard-header .list-group-item span.label {
   font-size: 12px;
+}
+
+.table tr.focus td {
+  background: #e0e5f5;
 }
 
 .table td[rowspan="2"] {
@@ -571,8 +615,8 @@ body.mini-navbar .nav-header {
 }
 
 input[type="datetime-local"], input[type="datetime-local"]:focus {
-  height: 31px;
-  line-height: 31px;
+  height: 35px;
+  line-height: 35px;
   border: 1px solid #e5e6e7;
   padding-left: 8px;
   padding-right: 8px;
@@ -644,5 +688,46 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 
 .pagination .footable-page a {
   color: #333;
+}
+
+.breadcrumb {
+  background: none;
+}
+
+.breadcrumb-item {
+  font-weight: normal;
+}
+
+.breadcrumb-item:hover {
+  color: #3E659F;
+}
+
+.page-heading {
+  padding: 0 10px 10px 10px;
+}
+
+.ibox-title[data-style="inline"] {
+  padding: 10px 15px;
+}
+
+.ibox-title[data-style="inline"] .input-group-append {
+  width: 31px;
+}
+
+.ibox-title[data-style="inline"] .ibox-tools {
+  top: 10px;
+}
+
+@media (max-width: 480px) {
+  .ibox-title[data-style="inline"] .ibox-tools {
+    position: initial;
+    width: 100%;
+  }
+}
+
+.title {
+  color: #F47C5D;
+  font-weight: 400;
+  font-family: "Noto Sans TC";
 }
 /*# sourceMappingURL=newstyle.css.map */

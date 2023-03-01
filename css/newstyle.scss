@@ -1,3 +1,5 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
 @mixin pc-md {
     @media (max-width: 1600px) {
         @content;
@@ -230,25 +232,22 @@ input::placeholder {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
+            justify-content: space-between;
         padding: 10px 65px 10px 15px;
         &-txt{
             font-size: 18px!important;
             @include mobile{
                 display: block;
-                width: 100%;
             }
         }
         .btn{
             width: auto!important;
-            @include mobile{
-                margin-right: -45px;
-            }
         }
     }
     &-filter{
         font-size: 14px;
         .input-group-text,.btn{
-            height: 31px;
+            height: 35px;
             font-size: 14px;
             padding: 0 10px;
             @include mobile{
@@ -256,7 +255,7 @@ input::placeholder {
             }
         }
         .btn{
-            line-height: 31px;
+            line-height: 35px;
         }
         .ibox-filter-group{
             .active{
@@ -336,6 +335,10 @@ body.mini-navbar .nav-header{
     margin-top: 12px;
     background: #fff;
 }
+.form-group .form-control {
+    border: 1px solid #afc8df;
+    border-radius: 3px;
+}
 .nav-header{
     background: #2F4050;
 }
@@ -370,8 +373,8 @@ body.mini-navbar .nav-header{
     border-color: #7183AC!important;
 }
 .btn-primary{
-    &:hover{
-        background: #5c6c91;
+    &:hover,&:focus{
+        background: #5c6c91 !important;
     }
 }
 .text-primary{
@@ -381,6 +384,41 @@ body.mini-navbar .nav-header{
     color: #3E659F;
     font-weight: bold;
     font-size: 24px!important;
+}
+.form-title{
+    color: #3E659F;
+    font-weight: bold;
+    font-size: 16px!important;
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 100%;
+        height: 1px;
+        background: #7183AC;
+    }
+    &-txt{
+        background: #E9ECEF;
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        padding-right: 16px;
+    }
+    &[data-style="light"]{
+        .form-title-txt{
+            background: #fff;
+        }
+    }
+}
+select{
+    background: url("../img/ic-arrow-down.svg") no-repeat right center #fff !important;
+    background-size: 20px !important;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 .btn-success{
     background: #51BDC5;
@@ -394,6 +432,9 @@ body.mini-navbar .nav-header{
 }
 .dashboard-header .list-group-item span.label{
     font-size: 12px;
+}
+.table tr.focus td{
+    background: #e0e5f5;
 }
 .table td[rowspan="2"]{
     border-right: 1px solid #dee2e6;
@@ -435,8 +476,8 @@ body.mini-navbar .nav-header{
     font-size: 16px;
 }
 input[type="datetime-local"],input[type="datetime-local"]:focus{
-    height: 31px;
-    line-height: 31px;
+    height: 35px;
+    line-height: 35px;
     border: 1px solid #e5e6e7;
     padding-left: 8px;
     padding-right: 8px;
@@ -497,4 +538,34 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 }
 .pagination .footable-page a{
     color: #333;
+}
+.breadcrumb{
+    background: none;
+}
+.breadcrumb-item{
+    font-weight: normal;
+    &:hover{
+        color: #3E659F;
+    }
+}
+.page-heading {
+    padding: 0 10px 10px 10px;
+}
+.ibox-title[data-style="inline"]{
+    padding: 10px 15px;
+    .input-group-append{
+        width: 31px;
+    }
+    .ibox-tools{
+        top: 10px;
+        @include mobile-sm{
+            position: initial;
+            width: 100%;
+        }
+    }
+}
+.title{
+    color: #F47C5D;
+    font-weight: 400;
+    font-family: "Noto Sans TC",;
 }
