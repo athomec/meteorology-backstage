@@ -86,8 +86,8 @@
                         </a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="assets.html">業務資産集(群)</a></li>
-                            <li><a href="#">硬體</a></li>
-                            <li><a href="#">系統</a></li>
+                            <li><a href="assets.html">硬體</a></li>
+                            <li><a href="assets1.html">系統</a></li>
                         </ul>
                     </li>
                     <li>
@@ -243,7 +243,7 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2 class="title"><i class="fa fa-pie-chart"></i> 硬體</h2>
+                    <h2 class="title"><i class="fa fa-pie-chart"></i> 系統</h2>
                 </div>
             </div>
             <div class="row">
@@ -257,7 +257,7 @@
                                 <a href="assets.html">資產管理</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="assets.html">硬體</a>
+                                <a href="assets1.html">系統</a>
                             </li>
                             <li class="breadcrumb-item active">
                                 <strong>編輯清單</strong>
@@ -288,17 +288,18 @@
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-sm-6">
-                                                        <label for="member-id">保管人員工編號</label>
-                                                        <input type="text" placeholder="請輸入保管人員工編號" id="member-id" class="form-control"
-                                                            value="2557257">
+                                                        <label for="charge-id">系統負責人編號</label>
+                                                        <input type="text" placeholder="請輸入系統負責人編號" id="charge-id"
+                                                            class="form-control" value="2557257">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="row align-items-end">
                                                     <div class="col-sm-6">
-                                                        <label for="maintain-unit">維護單位</label>
-                                                        <select class="form-control mb-2 mb-md-0" name="unit" id="maintain-unit">
+                                                        <label for="business-unit">業務單位</label>
+                                                        <select class="form-control mb-2 mb-md-0" name="unit"
+                                                            id="business-unit">
                                                             <option>資訊中心</option>
                                                             <option>option 2</option>
                                                             <option>option 3</option>
@@ -306,9 +307,34 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6">
-                                                        <label for="maintain-class" class="sr-only"></label>
-                                                        <select class="form-control mb-2 mb-md-0" name="account" id="maintain-class">
+                                                        <label for="business-class" class="sr-only"></label>
+                                                        <select class="form-control mb-2 mb-md-0" name="account"
+                                                            id="business-class">
                                                             <option>系統課</option>
+                                                            <option>option 2</option>
+                                                            <option>option 3</option>
+                                                            <option>option 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row align-items-end">
+                                                    <div class="col-sm-6">
+                                                        <label for="business-group">業務群</label>
+                                                        <select class="form-control mb-2 mb-md-0" name="unit"
+                                                            id="business-unit">
+                                                            <option>biz1 - 等級</option>
+                                                            <option>option 2</option>
+                                                            <option>option 3</option>
+                                                            <option>option 4</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label for="asset-group">資產集(群)</label>
+                                                        <select class="form-control mb-2 mb-md-0" name="account"
+                                                            id="asset-group">
+                                                            <option>asset1</option>
                                                             <option>option 2</option>
                                                             <option>option 3</option>
                                                             <option>option 4</option>
@@ -320,96 +346,91 @@
                                                 <div class="form-group mb-0">
                                                     <div class="row align-items-end">
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label for="type">請選擇設備種類</label>
-                                                            <select class="form-control m-b" id="type">
-                                                                <option>請選擇</option>
-                                                                <option>option 2</option>
-                                                                <option>option 3</option>
-                                                                <option>option 4</option>
-                                                            </select>
+                                                            <label for="host-name">主機名稱</label>
+                                                            <input type="text" class="form-control m-b"
+                                                                value="DL360 Gen7" id="host-name">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label for="brand">請選擇品牌</label>
+                                                            <label for="brand">實體/虛擬</label>
                                                             <select class="form-control m-b" id="brand">
-                                                                <option>請選擇</option>
-                                                                <option>option 2</option>
-                                                                <option>option 3</option>
-                                                                <option>option 4</option>
+                                                                <option>實體</option>
+                                                                <option>虛擬</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label for="model">型號</label>
-                                                            <input type="text" class="form-control m-b"
-                                                                value="DL360 Gen7" id="model">
+                                                            <label for="mac-add">MAC Address</label>
+                                                            <div class="input-group m-b"><input type="text"
+                                                                    class="form-control" id="mac-add">
+                                                                <div class="input-group-append">
+                                                                    <button data-toggle="dropdown" data-con="plus" 
+                                                                        class="btn btn-primary dropdown-toggle"
+                                                                        type="button"><i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu float-right p-3">
+                                                                        <li class="mb-2"><input type="text"
+                                                                                class="form-control"></li>
+                                                                        <li class="mb-2"><input type="text"
+                                                                                class="form-control"></li>
+                                                                        <li class="mb-2"><input type="text"
+                                                                                class="form-control"></li>
+                                                                        <li class="mb-2"><a href="#"
+                                                                                class="text-center text-primary m-0"><i
+                                                                                    class="fa fa-plus"></i></a></li>
+                                                                        <li><button
+                                                                                class="ibox-action btn btn-primary w-100"
+                                                                                type="submit">確認</button></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label for="serial-number">序號</label>
-                                                            <input type="text" class="form-control m-b"
-                                                                value="YCHS154345" id="serial-number">
+                                                            <label for="manage-ip">管理 IP</label>
+                                                            <div class="input-group m-b"><input type="text"
+                                                                    class="form-control" id="manage-ip">
+                                                                <div class="input-group-append">
+                                                                    <button data-toggle="dropdown" data-con="plus" 
+                                                                        class="btn btn-primary dropdown-toggle"
+                                                                        type="button"><i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu float-right p-3">
+                                                                        <li class="mb-2"><input type="text"
+                                                                                class="form-control"></li>
+                                                                        <li class="mb-2"><input type="text"
+                                                                                class="form-control"></li>
+                                                                        <li class="mb-2"><input type="text"
+                                                                                class="form-control"></li>
+                                                                        <li class="mb-2"><a href="#"
+                                                                                class="text-center text-primary m-0"><i
+                                                                                    class="fa fa-plus"></i></a></li>
+                                                                        <li><button
+                                                                                class="ibox-action btn btn-primary w-100"
+                                                                                type="submit">確認</button></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label class="purchase-document">採購文號</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="YCHS154345" id="purchase-document">
+                                                            <label for="type">類型</label>
+                                                            <select class="form-control m-b mb-lg-0" id="type">
+                                                                <option>正式機</option>
+                                                                <option>虛擬</option>
+                                                            </select>
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label for="purchase-number">採購案號</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="24545445" id="purchase-number">
+                                                            <label for="use">用途</label>
+                                                            <input type="text" class="form-control mb-3 mb-lg-0"
+                                                                id="use">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label for="purchase-company">採購廠商</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="DL360 Gen7" id="purchase-company">
+                                                            <label for="system-ver">作業系統版本</label>
+                                                            <input type="text" class="form-control mb-3 mb-lg-0"
+                                                                id="system-ver">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label for="support-company">維護廠商</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0" value="YCHS154345" id="support-company">
+                                                            <label for="segment">網段</label>
+                                                            <input type="text" class="form-control mb-3 mb-lg-0"
+                                                                id="segment">
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hr-line-dashed"></div>
-                                            <h6 class="form-title" data-style="light">
-                                                <p class="form-title-txt"><i class="fa fa-file-text mr-2"></i>採購資料</p>
-                                            </h6>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="purchase-date">採購日</label>
-                                                        <input class="m-b form-date-input" type="datetime-local"
-                                                            id="purchase-date" name="meeting-time" step="1"
-                                                            class="mb-0 mb-sm-2" style="max-width: 100%;">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="warranty-period">保固年限</label>
-                                                        <input type="text" class="form-control m-b" value="5" id="warranty-period">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="service-life">使用年限</label>
-                                                        <input type="text" class="form-control m-b" value="10" id="service-life">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="number">數量</label>
-                                                        <input type="text" class="form-control m-b" value="1" id="number">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="price">價格</label>
-                                                        <input type="text" class="form-control m-b" value="5,000,000" id="price">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="property-number">財產編號</label>
-                                                        <input type="text" class="form-control m-b" value="24545445" id="property-number">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="ip">IP 位置</label>
-                                                        <input type="text" class="form-control m-b" value="DL360 Gen7" id="ip">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="locate">地點</label>
-                                                        <select class="form-control m-b" name="account" id="locate">
-                                                            <option>第一機房</option>
-                                                            <option>option 2</option>
-                                                            <option>option 3</option>
-                                                            <option>option 4</option>
-                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -420,30 +441,78 @@
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label for="cabinet-no">櫃號</label>
-                                                        <select class="form-control m-b" name="account" id="cabinet-no">
-                                                            <option>一</option>
-                                                            <option>二</option>
-                                                            <option>三</option>
-                                                            <option>四</option>
-                                                        </select>
+                                                        <label for="connect">連線管理方式</label>
+                                                        <input type="text" class="form-control m-b" id="connect">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label for="start-u-number">起始 U 數</label>
-                                                        <select class="form-control m-b" name="account" id="start-u-number">
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                        </select>
+                                                        <label for="cpu">CPU</label>
+                                                        <input type="text" class="form-control m-b" id="cpu">
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label for="height">高度</label>
-                                                        <select class="form-control m-b" name="account" id="height">
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
+                                                        <label for="ram">RAM</label>
+                                                        <input type="text" class="form-control m-b" id="ram">
+                                                    </div>
+                                                    <div class="col-sm-6 col-lg-3">
+                                                        <label for="disk">DISK</label>
+                                                        <div class="input-group m-b"><input type="text" class="form-control" id="disk">
+                                                            <div class="input-group-append">
+                                                                <button data-toggle="dropdown" data-con="plus" class="btn btn-primary dropdown-toggle" type="button"><i class="fa fa-plus"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu float-right p-3">
+                                                                    <li class="mb-2">
+                                                                        <input type="text" class="form-control">
+                                                                    </li>
+                                                                    <li class="mb-2">
+                                                                        <input type="text" class="form-control">
+                                                                    </li>
+                                                                    <li class="mb-2">
+                                                                        <input type="text" class="form-control">
+                                                                    </li>
+                                                                    <li class="mb-2">
+                                                                        <a href="#" class="text-center text-primary m-0"><i class="fa fa-plus"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="ibox-action btn btn-primary w-100" type="submit">確認</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-lg-3">
+                                                        <label for="drive">網路磁碟機</label>
+                                                        <div class="input-group m-b"><input type="text"
+                                                                class="form-control" id="drive">
+                                                            <div class="input-group-append">
+                                                                <button data-toggle="dropdown" data-con="plus" class="btn btn-primary dropdown-toggle" type="button">
+                                                                    <i class="fa fa-plus"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu float-right p-3">
+                                                                    <li class="mb-2">
+                                                                        <input type="text" class="form-control">
+                                                                    </li>
+                                                                    <li class="mb-2">
+                                                                        <input type="text" class="form-control">
+                                                                    </li>
+                                                                    <li class="mb-2">
+                                                                        <input type="text" class="form-control">
+                                                                    </li>
+                                                                    <li class="mb-2">
+                                                                        <a href="#" class="text-center text-primary m-0"><i class="fa fa-plus"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="ibox-action btn btn-primary w-100" type="submit">確認</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-lg-3">
+                                                        <label for="hardware">硬體</label>
+                                                        <select class="form-control m-b" name="account" id="hardware">
+                                                            <option>設備1</option>
+                                                            <option>option 2</option>
+                                                            <option>option 3</option>
+                                                            <option>option 4</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
@@ -456,30 +525,17 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label for="socket1">排插 1</label>
-                                                        <input type="text" class="form-control m-b" id="socket1">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="socket2">排插 2</label>
-                                                        <input type="text" class="form-control m-b" id="socket2">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="situation">使用情形</label>
-                                                        <select class="form-control m-b" name="account" id="situation">
-                                                            <option>請選擇</option>
+                                                        <label for="value">資產價值</label>
+                                                        <select class="form-control m-b" name="account" id="value">
+                                                            <option>紅</option>
                                                             <option>option 2</option>
                                                             <option>option 3</option>
                                                             <option>option 4</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label for="belong">所屬叢集</label>
-                                                        <select class="form-control m-b" name="account" id="belong">
-                                                            <option>請選擇</option>
-                                                            <option>option 2</option>
-                                                            <option>option 3</option>
-                                                            <option>option 4</option>
-                                                        </select>
+                                                        <label for="order">開機順序</label>
+                                                        <input type="text" class="form-control m-b" id="order">
                                                     </div>
                                                 </div>
                                             </div>
@@ -488,9 +544,9 @@
                                             <div class="form-group row">
                                                 <div class="col-12 d-flex justify-content-center">
                                                     <button class="ibox-action btn btn-gray btn-lg mr-2" type="button"
-                                                        onclick="javascript:location.href='assets.html'">取消回上一頁</button>
+                                                        onclick="javascript:location.href='assets1.html'">取消回上一頁</button>
                                                     <button class="ibox-action btn btn-info btn-lg" type="submit"
-                                                        onclick="javascript:location.href='assets.html'">儲存變更</button>
+                                                        onclick="javascript:location.href='assets1.html'">儲存變更</button>
                                                 </div>
                                             </div>
                                         </form>

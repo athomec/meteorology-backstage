@@ -289,8 +289,10 @@ input::placeholder {
         }
     }
 }
-.ibox-tools a{
+.ibox-tools{
+    a{
     color: #3E659F!important;
+}
 }
 .justify-center{
     justify-content: center;
@@ -339,6 +341,17 @@ body.mini-navbar .nav-header{
     .form-control,input[type="datetime-local"],input[type="datetime-local"]:focus{
         border: 1px solid #afc8df;
         border-radius: 3px;
+        width: 100%;
+    }
+    .input-group{
+    &>.form-control{
+        width: 1%;
+    }
+}
+}
+.input-group-append{
+    button[data-con="plus"]:after{
+        display: none;
     }
 }
 .nav-header{
@@ -356,10 +369,10 @@ body.mini-navbar .nav-header{
 .nav .label{
     border-radius: 10px;
 }
-.label-warning, .badge-warning{
+.label-danger, .badge-danger{
     background-color: #E57676;
 }
-.btn-warning{
+.btn-danger{
     background-color: #E57676;
     border-color: #E57676;
     &:hover,&:focus{
@@ -367,7 +380,7 @@ body.mini-navbar .nav-header{
         border-color: darken($color: #E57676, $amount: 10%);
     }
 }
-.badge-warning{
+.badge-danger{
     border-radius: 10px;
 }
 .label-primary, .badge-primary,.btn-primary{
@@ -375,9 +388,12 @@ body.mini-navbar .nav-header{
     border-color: #7183AC!important;
 }
 .btn-primary{
-    &:hover,&:focus{
+    &:hover,&:focus,&:active,&.dropdown-toggle{
         background: #5c6c91 !important;
     }
+}
+.dropdown-menu{
+    font-size: 14px;
 }
 .text-primary{
     color: #7183AC!important;
@@ -422,7 +438,7 @@ select{
     -moz-appearance: none;
     -webkit-appearance: none;
 }
-.btn-success{
+.btn-info{
     background: #51BDC5;
     border: 1px solid #51BDC5;
     &:hover{
@@ -557,12 +573,27 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     padding: 10px 15px;
     .input-group-append{
         width: 31px;
+        height: 31px;
     }
     .ibox-tools{
         top: 10px;
-        @include mobile-sm{
+        display: flex;
+    align-items: start;
+        @include pc-sm{
             position: initial;
             width: 100%;
+            flex-wrap: wrap;
+        }
+        .form-control{
+            height: 31px;
+            &::placeholder{
+                font-size: 0.9rem;
+            }
+        }
+        .btn{
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 31px;
         }
     }
 }

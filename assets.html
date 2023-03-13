@@ -84,9 +84,9 @@
                             <span class="fa arrow"></span>
                         </a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="assets.html">業務資產群</a></li>
-                            <li><a href="#">設備</a></li>
-                            <li><a href="#">系統</a></li>
+                            <li><a href="assets.html">業務資産集(群)</a></li>
+                            <li><a href="assets.html">硬體</a></li>
+                            <li><a href="assets1.html">系統</a></li>
                         </ul>
                     </li>
                     <li>
@@ -124,7 +124,7 @@
                         </form>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                                <i class="fa fa-envelope"></i> <span class="label label-danger">16</span>
                             </a>
                             <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
                                 <li>
@@ -241,7 +241,7 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2 class="title"><i class="fa fa-pie-chart"></i> 業務資產群</h2>
+                    <h2 class="title"><i class="fa fa-pie-chart"></i> 硬體</h2>
                 </div>
                 <div class="col-lg-2">
 
@@ -258,7 +258,7 @@
                                 <a href="assets.html">資產管理</a>
                             </li>
                             <li class="breadcrumb-item active">
-                                <strong>業務資產群</strong>
+                                <strong>硬體</strong>
                             </li>
                         </ol>
                     </div>
@@ -274,14 +274,21 @@
                                     <div class="ibox-title" data-style="inline">
                                         <h5 class="ibox-title-txt my-1">清單</h5>
                                         <div class="ibox-tools">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control form-control-sm"
-                                                    placeholder="搜尋...">
+                                            <div class="input-group m-b mr-2">
+                                                <input type="text" class="form-control form-control-sm" placeholder="搜尋...">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-sm btn-success" type="button">
+                                                    <button class="btn btn-sm btn-info" type="button">
                                                         <i class="fa fa-search"></i></button>
                                                 </div>
                                             </div>
+                                            <select class="form-control m-b mr-2" name="account">
+                                                <option>顯示 10 筆</option>
+                                                <option>顯示 20 筆</option>
+                                                <option>顯示 30 筆</option>
+                                                <option>顯示 40 筆</option>
+                                            </select>
+                                            <button type="button" class="btn btn-info mr-2">新增 <i class="fa fa-plus"></i></button>
+                                            <button type="button" class="btn btn-success">匯入 Excel <i class="fa fa-sign-in"></i></button>
                                         </div>
                                     </div>
                                     <div class="ibox-content">
@@ -310,7 +317,7 @@
                                                         <td>正常</td>
                                                         <td>
                                                             <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
-                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                            <button type="button" class="btn btn-danger">刪除</button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -323,7 +330,7 @@
                                                         <td>正常</td>
                                                         <td>
                                                             <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
-                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                            <button type="button" class="btn btn-danger">刪除</button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -336,7 +343,7 @@
                                                         <td>正常</td>
                                                         <td>
                                                             <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
-                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                            <button type="button" class="btn btn-danger">刪除</button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -349,7 +356,7 @@
                                                         <td>正常</td>
                                                         <td>
                                                             <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
-                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                            <button type="button" class="btn btn-danger">刪除</button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -362,7 +369,7 @@
                                                         <td>正常</td>
                                                         <td>
                                                             <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
-                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                            <button type="button" class="btn btn-danger">刪除</button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -375,7 +382,7 @@
                                                         <td>正常</td>
                                                         <td>
                                                             <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
-                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                            <button type="button" class="btn btn-danger">刪除</button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -388,7 +395,7 @@
                                                         <td>正常</td>
                                                         <td>
                                                             <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
-                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                            <button type="button" class="btn btn-danger">刪除</button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -401,7 +408,7 @@
                                                         <td>正常</td>
                                                         <td>
                                                             <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
-                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                            <button type="button" class="btn btn-danger">刪除</button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -414,7 +421,7 @@
                                                         <td>正常</td>
                                                         <td>
                                                             <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
-                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                            <button type="button" class="btn btn-danger">刪除</button>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -427,7 +434,7 @@
                                                         <td>正常</td>
                                                         <td>
                                                             <button type="button" class="btn btn-primary mr-2" onclick="javascript:location.href='assets-edit.html'">編輯</button>
-                                                            <button type="button" class="btn btn-warning">刪除</button>
+                                                            <button type="button" class="btn btn-danger">刪除</button>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -485,8 +492,8 @@
                                     <img alt="image" class="rounded-circle message-avatar" src="img/a1.jpg">
 
                                     <div class="m-t-xs">
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-danger"></i>
+                                        <i class="fa fa-star text-danger"></i>
                                     </div>
                                 </div>
                                 <div class="media-body">
@@ -515,9 +522,9 @@
                                     <img alt="image" class="rounded-circle message-avatar" src="img/a3.jpg">
 
                                     <div class="m-t-xs">
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-danger"></i>
+                                        <i class="fa fa-star text-danger"></i>
+                                        <i class="fa fa-star text-danger"></i>
                                     </div>
                                 </div>
                                 <div class="media-body">
@@ -575,9 +582,9 @@
                                     <img alt="image" class="rounded-circle message-avatar" src="img/a3.jpg">
 
                                     <div class="m-t-xs">
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-danger"></i>
+                                        <i class="fa fa-star text-danger"></i>
+                                        <i class="fa fa-star text-danger"></i>
                                     </div>
                                 </div>
                                 <div class="media-body">
@@ -619,7 +626,7 @@
 
                                 <div class="small">Completion with: 22%</div>
                                 <div class="progress progress-mini">
-                                    <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    <div style="width: 22%;" class="progress-bar progress-bar-danger"></div>
                                 </div>
                                 <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
                             </a>
@@ -666,7 +673,7 @@
 
                                 <div class="small">Completion with: 22%</div>
                                 <div class="progress progress-mini">
-                                    <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    <div style="width: 22%;" class="progress-bar progress-bar-danger"></div>
                                 </div>
                                 <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
                             </a>
@@ -920,7 +927,7 @@
     </div>
     <div id="small-chat">
 
-        <span class="badge badge-warning float-right">5</span>
+        <span class="badge badge-danger float-right">5</span>
         <a class="open-small-chat" href="">
             <i class="fa fa-comments"></i>
 
@@ -960,8 +967,8 @@
                                     <img alt="image" class="rounded-circle message-avatar" src="img/a1.jpg">
 
                                     <div class="m-t-xs">
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-danger"></i>
+                                        <i class="fa fa-star text-danger"></i>
                                     </div>
                                 </div>
                                 <div class="media-body">
@@ -990,9 +997,9 @@
                                     <img alt="image" class="rounded-circle message-avatar" src="img/a3.jpg">
 
                                     <div class="m-t-xs">
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-danger"></i>
+                                        <i class="fa fa-star text-danger"></i>
+                                        <i class="fa fa-star text-danger"></i>
                                     </div>
                                 </div>
                                 <div class="media-body">
@@ -1048,9 +1055,9 @@
                                     <img alt="image" class="rounded-circle message-avatar" src="img/a3.jpg">
 
                                     <div class="m-t-xs">
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
-                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-danger"></i>
+                                        <i class="fa fa-star text-danger"></i>
+                                        <i class="fa fa-star text-danger"></i>
                                     </div>
                                 </div>
                                 <div class="media-body">
@@ -1092,7 +1099,7 @@
 
                                 <div class="small">Completion with: 22%</div>
                                 <div class="progress progress-mini">
-                                    <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    <div style="width: 22%;" class="progress-bar progress-bar-danger"></div>
                                 </div>
                                 <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
                             </a>
@@ -1138,7 +1145,7 @@
 
                                 <div class="small">Completion with: 22%</div>
                                 <div class="progress progress-mini">
-                                    <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    <div style="width: 22%;" class="progress-bar progress-bar-danger"></div>
                                 </div>
                                 <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
                             </a>

@@ -445,6 +445,15 @@ body.mini-navbar .nav-header {
 .form-group .form-control, .form-group input[type="datetime-local"], .form-group input[type="datetime-local"]:focus {
   border: 1px solid #afc8df;
   border-radius: 3px;
+  width: 100%;
+}
+
+.form-group .input-group > .form-control {
+  width: 1%;
+}
+
+.input-group-append button[data-con="plus"]:after {
+  display: none;
 }
 
 .nav-header {
@@ -473,21 +482,21 @@ body.mini-navbar .nav-header {
   border-radius: 10px;
 }
 
-.label-warning, .badge-warning {
+.label-danger, .badge-danger {
   background-color: #E57676;
 }
 
-.btn-warning {
+.btn-danger {
   background-color: #E57676;
   border-color: #E57676;
 }
 
-.btn-warning:hover, .btn-warning:focus {
+.btn-danger:hover, .btn-danger:focus {
   background-color: #dd4b4b;
   border-color: #dd4b4b;
 }
 
-.badge-warning {
+.badge-danger {
   border-radius: 10px;
 }
 
@@ -496,8 +505,12 @@ body.mini-navbar .nav-header {
   border-color: #7183AC !important;
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.dropdown-toggle {
   background: #5c6c91 !important;
+}
+
+.dropdown-menu {
+  font-size: 14px;
 }
 
 .text-primary {
@@ -548,12 +561,12 @@ select {
   -webkit-appearance: none;
 }
 
-.btn-success {
+.btn-info {
   background: #51BDC5;
   border: 1px solid #51BDC5;
 }
 
-.btn-success:hover {
+.btn-info:hover {
   background: #39a2aa;
 }
 
@@ -712,17 +725,52 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 
 .ibox-title[data-style="inline"] .input-group-append {
   width: 31px;
+  height: 31px;
 }
 
 .ibox-title[data-style="inline"] .ibox-tools {
   top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 992px) {
   .ibox-title[data-style="inline"] .ibox-tools {
     position: initial;
     width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
+}
+
+.ibox-title[data-style="inline"] .ibox-tools .form-control {
+  height: 31px;
+}
+
+.ibox-title[data-style="inline"] .ibox-tools .form-control::-webkit-input-placeholder {
+  font-size: 0.9rem;
+}
+
+.ibox-title[data-style="inline"] .ibox-tools .form-control:-ms-input-placeholder {
+  font-size: 0.9rem;
+}
+
+.ibox-title[data-style="inline"] .ibox-tools .form-control::-ms-input-placeholder {
+  font-size: 0.9rem;
+}
+
+.ibox-title[data-style="inline"] .ibox-tools .form-control::placeholder {
+  font-size: 0.9rem;
+}
+
+.ibox-title[data-style="inline"] .ibox-tools .btn {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 31px;
 }
 
 .title {
