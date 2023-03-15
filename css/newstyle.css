@@ -452,6 +452,10 @@ body.mini-navbar .nav-header {
   width: 1%;
 }
 
+select.form-control:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px);
+}
+
 .input-group-append button[data-con="plus"]:after {
   display: none;
 }

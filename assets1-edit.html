@@ -358,78 +358,38 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label for="mac-add">MAC Address</label>
-                                                            <div class="input-group m-b"><input type="text"
-                                                                    class="form-control" id="mac-add">
-                                                                <div class="input-group-append">
-                                                                    <button data-toggle="dropdown" data-con="plus" 
-                                                                        class="btn btn-primary dropdown-toggle"
-                                                                        type="button"><i class="fa fa-plus"></i>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu float-right p-3">
-                                                                        <li class="mb-2"><input type="text"
-                                                                                class="form-control"></li>
-                                                                        <li class="mb-2"><input type="text"
-                                                                                class="form-control"></li>
-                                                                        <li class="mb-2"><input type="text"
-                                                                                class="form-control"></li>
-                                                                        <li class="mb-2"><a href="#"
-                                                                                class="text-center text-primary m-0"><i
-                                                                                    class="fa fa-plus"></i></a></li>
-                                                                        <li><button
-                                                                                class="ibox-action btn btn-primary w-100"
-                                                                                type="submit">確認</button></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
+                                                            <label for="connect">連線管理方式</label>
+                                                            <input type="text" class="form-control m-b" id="connect">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
-                                                            <label for="manage-ip">管理 IP</label>
-                                                            <div class="input-group m-b"><input type="text"
-                                                                    class="form-control" id="manage-ip">
-                                                                <div class="input-group-append">
-                                                                    <button data-toggle="dropdown" data-con="plus" 
-                                                                        class="btn btn-primary dropdown-toggle"
-                                                                        type="button"><i class="fa fa-plus"></i>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu float-right p-3">
-                                                                        <li class="mb-2"><input type="text"
-                                                                                class="form-control"></li>
-                                                                        <li class="mb-2"><input type="text"
-                                                                                class="form-control"></li>
-                                                                        <li class="mb-2"><input type="text"
-                                                                                class="form-control"></li>
-                                                                        <li class="mb-2"><a href="#"
-                                                                                class="text-center text-primary m-0"><i
-                                                                                    class="fa fa-plus"></i></a></li>
-                                                                        <li><button
-                                                                                class="ibox-action btn btn-primary w-100"
-                                                                                type="submit">確認</button></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
+                                                            <label for="cpu">CPU</label>
+                                                            <input type="text" class="form-control m-b" id="cpu">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
                                                             <label for="type">類型</label>
-                                                            <select class="form-control m-b mb-lg-0" id="type">
+                                                            <select class="form-control m-b" id="type">
                                                                 <option>正式機</option>
                                                                 <option>虛擬</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
                                                             <label for="use">用途</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0"
+                                                            <input type="text" class="form-control mb-3"
                                                                 id="use">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
                                                             <label for="system-ver">作業系統版本</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0"
+                                                            <input type="text" class="form-control mb-3"
                                                                 id="system-ver">
                                                         </div>
                                                         <div class="col-sm-6 col-lg-3">
                                                             <label for="segment">網段</label>
-                                                            <input type="text" class="form-control mb-3 mb-lg-0"
+                                                            <input type="text" class="form-control mb-3"
                                                                 id="segment">
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-3">
+                                                            <label for="order">開機順序</label>
+                                                            <input type="text" class="form-control m-b" id="order">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -441,70 +401,8 @@
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label for="connect">連線管理方式</label>
-                                                        <input type="text" class="form-control m-b" id="connect">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="cpu">CPU</label>
-                                                        <input type="text" class="form-control m-b" id="cpu">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
                                                         <label for="ram">RAM</label>
                                                         <input type="text" class="form-control m-b" id="ram">
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="disk">DISK</label>
-                                                        <div class="input-group m-b"><input type="text" class="form-control" id="disk">
-                                                            <div class="input-group-append">
-                                                                <button data-toggle="dropdown" data-con="plus" class="btn btn-primary dropdown-toggle" type="button"><i class="fa fa-plus"></i>
-                                                                </button>
-                                                                <ul class="dropdown-menu float-right p-3">
-                                                                    <li class="mb-2">
-                                                                        <input type="text" class="form-control">
-                                                                    </li>
-                                                                    <li class="mb-2">
-                                                                        <input type="text" class="form-control">
-                                                                    </li>
-                                                                    <li class="mb-2">
-                                                                        <input type="text" class="form-control">
-                                                                    </li>
-                                                                    <li class="mb-2">
-                                                                        <a href="#" class="text-center text-primary m-0"><i class="fa fa-plus"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <button class="ibox-action btn btn-primary w-100" type="submit">確認</button>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6 col-lg-3">
-                                                        <label for="drive">網路磁碟機</label>
-                                                        <div class="input-group m-b"><input type="text"
-                                                                class="form-control" id="drive">
-                                                            <div class="input-group-append">
-                                                                <button data-toggle="dropdown" data-con="plus" class="btn btn-primary dropdown-toggle" type="button">
-                                                                    <i class="fa fa-plus"></i>
-                                                                </button>
-                                                                <ul class="dropdown-menu float-right p-3">
-                                                                    <li class="mb-2">
-                                                                        <input type="text" class="form-control">
-                                                                    </li>
-                                                                    <li class="mb-2">
-                                                                        <input type="text" class="form-control">
-                                                                    </li>
-                                                                    <li class="mb-2">
-                                                                        <input type="text" class="form-control">
-                                                                    </li>
-                                                                    <li class="mb-2">
-                                                                        <a href="#" class="text-center text-primary m-0"><i class="fa fa-plus"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <button class="ibox-action btn btn-primary w-100" type="submit">確認</button>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
                                                         <label for="hardware">硬體</label>
@@ -534,8 +432,62 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-sm-6 col-lg-3">
-                                                        <label for="order">開機順序</label>
-                                                        <input type="text" class="form-control m-b" id="order">
+                                                        <label for="disk">DISK</label>
+                                                        <div class="input-group mb-1">
+                                                            <input type="text" class="form-control" id="disk">
+                                                            <span class="input-group-append">
+                                                                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                                                            </span>
+                                                        </div>
+                                                        <p class="text-danger mb-2">若有一筆以上請按 + 繼續填寫</p>
+                                                        <ul class="pl-3 text-muted">
+                                                            <li class="mb-2"><a class="mr-2 text-primary"><i class="fa fa-window-close" aria-hidden="true"></i></a>disk1</li>
+                                                            <li class="mb-2"><a class="mr-2 text-primary"><i class="fa fa-window-close" aria-hidden="true"></i></a>disk2</li>
+                                                            <li class="mb-2"><a class="mr-2 text-primary"><i class="fa fa-window-close" aria-hidden="true"></i></a>disk3</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6 col-lg-3">
+                                                        <label for="mac-add">MAC Address</label>
+                                                        <div class="input-group mb-1">
+                                                            <input type="text" class="form-control" id="mac-add">
+                                                            <span class="input-group-append">
+                                                                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                                                            </span>
+                                                        </div>
+                                                        <p class="text-danger mb-2">若有一筆以上請按 + 繼續填寫</p>
+                                                        <ul class="pl-3 text-muted">
+                                                            <li class="mb-2"><a class="mr-2 text-primary"><i class="fa fa-window-close" aria-hidden="true"></i></a>address1</li>
+                                                            <li class="mb-2"><a class="mr-2 text-primary"><i class="fa fa-window-close" aria-hidden="true"></i></a>address2</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6 col-lg-3">
+                                                        <label for="drive">網路磁碟機</label>
+                                                        <div class="input-group mb-1">
+                                                            <select class="form-control m-b" name="account" id="drive">
+                                                                <option></option>
+                                                                <option>option 2</option>
+                                                                <option>option 3</option>
+                                                                <option>option 4</option>
+                                                            </select>
+                                                            <span class="input-group-append">
+                                                                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                                                            </span>
+                                                        </div>
+                                                        <p class="text-danger mb-2">若有一筆以上請按 + 繼續選擇</p>
+                                                        <ul class="pl-3 text-muted">
+                                                            <li class="mb-2"><a class="mr-2 text-primary"><i class="fa fa-window-close" aria-hidden="true"></i></a>disk1</li>
+                                                            <li class="mb-2"><a class="mr-2 text-primary"><i class="fa fa-window-close" aria-hidden="true"></i></a>disk2</li>
+                                                            <li class="mb-2"><a class="mr-2 text-primary"><i class="fa fa-window-close" aria-hidden="true"></i></a>disk3</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6 col-lg-3">
+                                                        <label for="manage-ip">管理 IP</label>
+                                                        <div class="input-group mb-1"><input type="text" class="form-control" id="manage-ip">
+                                                            <span class="input-group-append">
+                                                                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+                                                            </span>
+                                                        </div>
+                                                        <p class="text-danger mb-2">若有一筆以上請按 + 繼續填寫</p>
                                                     </div>
                                                 </div>
                                             </div>
