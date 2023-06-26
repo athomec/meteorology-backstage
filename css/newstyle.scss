@@ -381,6 +381,10 @@ select.form-control:not([size]):not([multiple]) {
 .label-danger, .badge-danger{
     background-color: #E57676;
 }
+.notice{
+    font-size: 13px;
+    color: #666;
+}
 .btn-danger{
     background-color: #E57676;
     border-color: #E57676;
