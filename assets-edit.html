@@ -298,18 +298,18 @@
                                                         <label for="business-name">業務名稱<span
                                                                 class="form-necessary">必填</span></label>
                                                         ：biz2
-                                                        <div class="d-flex mb-2">
-                                                            <a href="#" class="ibox-action btn btn-sm btn-info mr-2"
+                                                        <div class="d-flex flex-wrap">
+                                                            <a href="#" class="ibox-action btn btn-sm btn-info mr-2 mb-2"
                                                                 data-toggle="collapse" data-target="#business-change">
                                                                 選擇其他名稱
                                                             </a>
-                                                            <a href="#" class="ibox-action btn btn-sm btn-primary mr-2"
+                                                            <a href="#" class="ibox-action btn btn-sm btn-primary mr-2 mb-2"
                                                                 data-toggle="collapse" data-target="#business-add">
-                                                                新增名稱
+                                                                新增業務名稱
                                                             </a>
-                                                            <a href="#" class="ibox-action btn btn-sm btn-warning"
+                                                            <a href="#" class="ibox-action btn btn-sm btn-warning mb-2"
                                                                 data-toggle="collapse" data-target="#business-edit">
-                                                                編輯此名稱
+                                                                重新命名此名稱
                                                             </a>
                                                         </div>
                                                         <div class="business mb-4">
@@ -329,7 +329,7 @@
                                                             <div class="collapse" id="business-add"
                                                                 data-parent=".business">
                                                                 <div class="card card-body bg-gray border-0">
-                                                                    <label for="business-add-name"><span class="text-primary">新增名稱</span></label>
+                                                                    <label for="business-add-name"><span class="text-primary">新增業務名稱</span></label>
                                                                     <input type="text" class="form-control"
                                                                         placeholder="請輸入新名稱" id="business-add-name">
                                                                 </div>
@@ -337,26 +337,30 @@
                                                             <div class="collapse" id="business-edit"
                                                                 data-parent=".business">
                                                                 <div class="card card-body bg-gray border-0">
-                                                                    <label for="business-edit-name"><span class="text-warning">編輯名稱</span></label>
-                                                                    <input type="text" class="form-control" value="biz2"
+                                                                        <label for="business-edit-name"><span class="text-warning">重新命名此名稱</span></label>
+                                                                    
+                                                                    <input type="text" class="form-control mb-2" value="biz2"
                                                                         id="business-edit-name">
+                                                                        <div class="notice">
+                                                                            <span class="text-danger"><i class="fa fa-thumb-tack mr-1"></i>溫馨提示：</span>重新命名後，將取代既有業務名稱，原業務名稱將消失。
+                                                                        </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <label for="assets-name">資產群集名稱<span
                                                                 class="form-necessary">必填</span></label>：assets1
-                                                                <div class="d-flex mb-2">
-                                                                    <a href="#" class="ibox-action btn btn-sm btn-info mr-2"
+                                                                <div class="d-flex flex-wrap">
+                                                                    <a href="#" class="ibox-action btn btn-sm btn-info mr-2 mb-2"
                                                                         data-toggle="collapse" data-target="#assets-change">
                                                                         選擇其他名稱
                                                                     </a>
-                                                                    <a href="#" class="ibox-action btn btn-sm btn-primary mr-2"
+                                                                    <a href="#" class="ibox-action btn btn-sm btn-primary mr-2 mb-2"
                                                                         data-toggle="collapse" data-target="#assets-add">
-                                                                        新增名稱
+                                                                        新增資產群集名稱
                                                                     </a>
-                                                                    <a href="#" class="ibox-action btn btn-sm btn-warning"
+                                                                    <a href="#" class="ibox-action btn btn-sm btn-warning mb-2"
                                                                         data-toggle="collapse" data-target="#assets-edit">
-                                                                        編輯此名稱
+                                                                        重新命名此名稱
                                                                     </a>
                                                                 </div>
                                                                 <div class="assets mb-4">
@@ -376,7 +380,7 @@
                                                                     <div class="collapse" id="assets-add"
                                                                         data-parent=".assets">
                                                                         <div class="card card-body bg-gray border-0">
-                                                                            <label for="assets-add-name"><span class="text-primary">新增名稱</span></label>
+                                                                            <label for="assets-add-name"><span class="text-primary">新增資產群集名稱</span></label>
                                                                             <input type="text" class="form-control"
                                                                                 placeholder="請輸入新名稱" id="assets-add-name">
                                                                         </div>
@@ -384,9 +388,12 @@
                                                                     <div class="collapse" id="assets-edit"
                                                                         data-parent=".assets">
                                                                         <div class="card card-body bg-gray border-0">
-                                                                            <label for="assets-edit-name"><span class="text-warning">編輯名稱</span></label>
-                                                                            <input type="text" class="form-control" value="biz2"
+                                                                            <label for="assets-edit-name"><span class="text-warning">重新命名此名稱</span></label>
+                                                                            <input type="text" class="form-control mb-2" value="biz2"
                                                                                 id="assets-edit-name">
+                                                                                <div class="notice">
+                                                                                    <span class="text-danger"><i class="fa fa-thumb-tack mr-1"></i>溫馨提示：</span>重新命名後，將取代既有業務名稱，原業務名稱將消失。
+                                                                                </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
