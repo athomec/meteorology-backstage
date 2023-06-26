@@ -253,8 +253,22 @@ $(document).ready(function () {
             $(".footer").addClass('fixed');
         }
     }
+    
 });
-
+// 選擇所有的 a 元素，當點擊時執行相應的捲動動畫
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault(); // 阻止默認的錨點跳轉行為
+  
+      // 獲取目標元素的 ID
+      const target = document.querySelector(this.getAttribute('href'));
+  
+      // 使用平滑捲動來實現滾動效果
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
 // check if browser support HTML5 local storage
 function localStorageSupport() {
     return (('localStorage' in window) && window['localStorage'] !== null)

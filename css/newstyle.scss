@@ -34,9 +34,12 @@ body {
     font-family: 微軟正黑體, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #333333;
+    -webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
     font-weight: bold;
-        font-size: 14px;
-    }
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
 input,select{
 	border: 1px solid #7183AC;
 }
@@ -48,6 +51,9 @@ input::placeholder {
         font-size: 14px;
     
 }
+}
+.bg-gray{
+    background: #f0f0f0;
 }
 /*---------------------捲軸樣式---------------------*/
 .scroll {
@@ -383,6 +389,16 @@ select.form-control:not([size]):not([multiple]) {
         border-color: darken($color: #E57676, $amount: 10%);
     }
 }
+.btn-gray{
+    background-color: #ececec;
+    border-color: #ececec;
+    color: #333;
+    &:hover,&:focus{
+        color: #111;
+        background-color: darken($color: #ececec, $amount: 5%);
+        border-color: darken($color: #ececec, $amount: 5%);
+    }
+}
 .badge-danger{
     border-radius: 10px;
 }
@@ -454,6 +470,7 @@ select{
 .dashboard-header .list-group-item span.label{
     font-size: 12px;
 }
+/*---------------------表格樣式---------------------*/
 .table tr.focus td{
     background: #e0e5f5;
 }
@@ -461,7 +478,44 @@ select{
     border-right: 1px solid #dee2e6;
     vertical-align: middle;
 }
-
+.table-rwd{
+    text-align: center; 
+    font-weight: normal;
+    th{
+        background: #3E659F!important;
+        color: #fff;
+        
+        .footable-sort-indicator{
+            display: none !important;
+        }
+    }
+    td{
+        &>a{
+            font-size: 18px;
+        }   
+    }
+    .footable-row-detail-row{
+        line-height: 2;
+    }
+    .footable-row-detail-inner{
+        text-align: left;
+    }
+    .footable-row-detail-name{
+        text-align: right;
+        color: #3E659F;
+    }
+    .footable-page{
+        font-weight: bold;
+    }
+    &[data-con="none"]{
+        .footable-toggle{
+            display: none !important;
+        }
+        tbody{
+            background: #f1f1f1;
+        }
+    }
+}
 .table-combine{
     thead{
         text-align: center;
@@ -521,6 +575,14 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     color-scheme: dark;
      -webkit-appearance: none;
   -moz-appearance: none;
+}
+.form-necessary{
+    background: #E57676;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0 8px 1px 8px;
+    margin-left: 8px;
+    font-size: 12px;
 }
 .navbar-minimalize{
     @include mobile{
